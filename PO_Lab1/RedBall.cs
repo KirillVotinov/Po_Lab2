@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PO_Lab1
 {
-    class RedBall:IHaveWeight, ICanMove
+    class RedBall : IHaveWeight, ICanMove
     {
         public int CoordinateX { private set; get; }
         public int Velosity { private set; get; }
@@ -26,7 +26,7 @@ namespace PO_Lab1
             CoordinateX = Coordinate;
             Velosity = CurrentVelosity;
             Weight = CurrentWeight;
-            Acseleration =  Convert.ToInt32((AppliedStrength - 0.6 *10*Weight)/Weight);
+            Acseleration =  Convert.ToInt32((AppliedStrength - 0.6 * 10 * Weight) / Weight);
         }
 
         public void TimeIsGoing(int Time)
@@ -40,6 +40,11 @@ namespace PO_Lab1
                 Velosity = 0;
                 Acseleration = 0;
             }
+        }
+        public void Stop()
+        {
+            Velosity = 0;
+            Acseleration = 0;
         }
     }
 }
