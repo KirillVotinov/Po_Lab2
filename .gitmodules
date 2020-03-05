@@ -1,3 +1,6 @@
 [submodule "SubModule1"]
 	path = SubModule1
 	url = https://github.com/KirillVotinov/SubModule1.git
+[submodule "task-1-KirillVotinov"]
+	path = task-1-KirillVotinov
+	url = https://github.com/itmo-java-basics-2020/task-1-KirillVotinov.git
