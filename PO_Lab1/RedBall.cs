@@ -31,6 +31,7 @@ namespace PO_Lab1
 
         public void TimeIsGoing(int Time)
         {
+            int a;
             CoordinateX = CoordinateX + Velosity * Time + Acseleration * Time * Time / 2;
             int newVelosity = Velosity + Acseleration * Time;
             if(Time > Velosity/Acseleration)
